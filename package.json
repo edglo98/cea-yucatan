@@ -1,0 +1,19 @@
+{
+  "name": "cea-yucatan",
+  "version": "1.0.0",
+  "description": "cea yucantan website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edglo98/cea-yucatan.git"
+  },
+  "author": "Edgar Jiovanny Lopez Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edglo98/cea-yucatan/issues"
+  },
+  "homepage": "https://github.com/edglo98/cea-yucatan#readme"
+}

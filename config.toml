@@ -1,0 +1,4 @@
+baseURL = "http://ceayucatan.com/"
+languageCode = "es-MX"
+title = "CEA Yucatán"
+theme = "ananke"
