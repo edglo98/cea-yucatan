@@ -1,0 +1,16 @@
+
+{{ define "main" }}
+    <h1>mi titulo-Posts**</h1>
+
+    {{ range .Pages }}
+        <article>
+            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} |{{ .Title }}</a>
+            <small>{{ .Content }}</small>
+        </article>
+    {{ end }}
+
+{{ end }}
+
+{{ define "footer" }}
+    {{ partial "footer.html" }}
+{{ end }}

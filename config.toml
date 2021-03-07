@@ -1,4 +1,50 @@
 baseURL = "http://ceayucatan.com/"
 languageCode = "es-MX"
-title = "CEA Yucatán"
-theme = "ananke"
+title = "CEA"
+
+
+[params]
+    styles = [
+      "styles/global.css",
+      "styles/navbar.css",
+      "styles/hamburguer_menu.css"
+    ]
+
+    scripts = [
+      "scripts/hamburguer_menu.js"
+    ]
+
+    subtitle = "Consultoria Especializada Ambiental"
+
+[author]
+    name = "edgar"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "services"
+    name = "Servicios"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/servicios/"
+    weight = -1111
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Articulos"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/articulos/"
+    weight = -111
+
+  [[menu.main]]
+    identifier = "about"
+    name = "Quiénes somos"
+    post = "<span class='alert'>New!</span>"
+    url = "/nosotros/"
+    weight = -11
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contactanos"
+    post = "<span class='alert'>New!</span>"
+    url = "/contacto/"
+    weight = -1
