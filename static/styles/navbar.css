@@ -8,6 +8,7 @@
     width: 100%;
     height: 90px;
     box-shadow: 0px 0px 20px #00000030;
+    transition: background-color 0.3s ease;
 }
 
 .navbar h1, .navbar small {
@@ -17,6 +18,7 @@
 .navbar a {
     text-decoration: none;
     color: var(--black);
+    transition: color 0.3s ease;
 }
 
 /* delimitar el espacio del contenido de el navbar */
@@ -58,10 +60,11 @@
 
 
 /* todo el contenido de navegacion */
-.aside-bar{
+.aside-bar {
     flex: 1;
     height: 100%;
     background-color: var(--white);
+    transition: background-color 0.3s ease;
 }
 
 .aside-bar ul{
@@ -124,13 +127,44 @@
 .contact-button {
     background-color: skyblue;
     line-height: 100%;
+    margin: 0;
+    font-size: .9em;
+    box-shadow: 0px 0px 5px 3px #67a7c050
 }
 
 .contact-button:hover {
     background-color: rgb(103, 167, 192);
 }
 
+
+/* darkmode */
+
+
+body.dark .navbar {
+    background-color: var(--black-2);
+}
+
+body.dark .aside-bar {
+    background-color: var(--black-2);
+}
+
+body.dark .navbar a {
+    color: var(--white);
+}
+
+.navbar-item a:hover, body.dark .navbar-item a:hover {
+    color: green;
+}
+
+.navbar-item__active a, body.dark .navbar-item__active a{
+    color: green;
+}
+
 @media (max-width: 900px){
+    .navbar {
+        height: 70px;
+    }
+
     .navbar-container{
         flex-direction: column;
     }
@@ -145,21 +179,17 @@
         position: absolute;
         top: 100%;
         height: max-content;
-        /* right: -100%; */ /* tipo de entra para el navegador con el hamburguer menu */
-        transition: right .2s ease;
+        left: -100%;
+        transition: left .3s ease;
+    }
+
+    .aside-bar__opened {
+        left: 0;
     }
 
     .navbar-item a {
         padding: 10px 0px;
         transition: color .2s ease;
-    }
-    
-    .navbar-item a:hover {
-        color: green;
-    }
-
-    .navbar-item__active a{
-        color: green;
     }
 
     .aside-bar ul{
@@ -170,4 +200,10 @@
     .navbar-hamburguer-menu {
         display: flex;
     }
+
+    /* darkmode mobil */
+    body.dark .aside-bar {
+        background-color: var(--black-1);
+    }
+
 }

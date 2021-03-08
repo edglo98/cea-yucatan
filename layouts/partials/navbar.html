@@ -13,13 +13,13 @@
                     </div>
                 </a>
                 <div class="navbar-hamburguer-menu">
-                    <button class="button contact-button">
+                    <button onclick="open_menu()" class="button contact-button">
                         Contactanos
                     </button>
                     {{ partial "hamburguer_menu.html" }}
                 </div>
             </div>
-            <div class="aside-bar">
+            <div class="aside-bar" id="aside-bar">
                 <ul>
                     {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}
@@ -30,9 +30,7 @@
                                 </a>
                             </li>
                     {{ end }}
-                    <div>
-                        ☀
-                    </div>
+                    {{ partial "switch_theme.html" }}
                 </ul>
             </div>
         </div>

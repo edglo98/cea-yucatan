@@ -1,9 +1,10 @@
 
 {{ define "main" }}
+{{ partial "slider.html" }}
 <h1>pagina principal</h1>
+no se  que haga esto pagina principal
 
 {{ range .Pages }}
-no se  que haga esto
     <article>
         <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} |{{ .Title }}</a>
         <small>{{ .Content }}</small>
