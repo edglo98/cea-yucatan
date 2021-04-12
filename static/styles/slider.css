@@ -49,7 +49,14 @@
     overflow-y: hidden;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
 }
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
 body.dark .slider {
     box-shadow: var(--white-shadow);
 }
