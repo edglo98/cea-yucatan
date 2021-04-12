@@ -1,0 +1,87 @@
+.swtchtheme-button{
+    min-width: auto;
+    width: fit-content;
+    align-self: center;
+}
+
+.switchtheme-circle{
+    font-size: 11px;
+    
+    display: block;
+    background-color: #474842;
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.switchtheme-circle span {
+    display: block;
+    background-color: var(--white);
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    position: absolute;
+    top: -28%;
+    right: -45%;
+    transition: background-color 0.2s ease, top 0.2s ease, right 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+.switchtheme-circle__active span {
+    background-color: #ecea6a;
+    width: 1.9em;
+    height: 1.9em;
+    top: -1px;
+    right: -1px;
+}
+.switchtheme-circle::after, 
+.switchtheme-circle::before, 
+.switchtheme-circle span::after, 
+.switchtheme-circle span::before {
+    content: "";
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    width: 3.1em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -50%;
+    left: -50%;
+    background-color: #ecea6a;
+    margin: auto;
+    transform: scale(0);
+    transition: transform .2s ease;
+}
+
+.switchtheme-circle::before {
+    transform: scale(0) rotate(90deg);
+}
+
+.switchtheme-circle span::before {
+    transform: scale(0) rotate(45deg);
+}
+
+.switchtheme-circle span::after {
+    transform: scale(0) rotate(-45deg);
+}
+
+/* esto es cuando esta activo */
+.switchtheme-circle__active::after {
+    transform: scale(1)
+}
+
+.switchtheme-circle__active::before {
+    transform: scale(1) rotate(90deg);
+}
+
+.switchtheme-circle__active span::before {
+    transform: scale(1) rotate(45deg);
+}
+
+.switchtheme-circle__active span::after {
+    transform: scale(1) rotate(-45deg);
+}
+
+

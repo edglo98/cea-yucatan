@@ -1,18 +1,13 @@
 
 {{ define "main" }}
-{{ partial "slider.html" }}
-<h1>pagina principal</h1>
-no se  que haga esto pagina principal
+    {{ partial "slider.html" }}
+    <h1>Nuestro trabajo</h1>
 
-{{ range .Pages }}
-    <article>
-        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} |{{ .Title }}</a>
-        <small>{{ .Content }}</small>
-    </article>
-{{ end }}
+    {{ range .Pages }}
+        <article>
+            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} |{{ .Title }}</a>
+            <small>{{ .Content }}</small>
+        </article>
+    {{ end }}
 
-{{ end }}
-
-{{ define "footer" }}
-{{ partial "footer.html" }} mi foter proncipal
 {{ end }}

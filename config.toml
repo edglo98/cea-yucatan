@@ -9,12 +9,14 @@ title = "CEA"
       "styles/navbar.css",
       "styles/hamburguer_menu.css",
       "styles/switch_theme.css",
-      "styles/slider.css"
+      "styles/slider.css",
+      "styles/footer.css"
     ]
 
     scripts = [
       "scripts/hamburguer_menu.js",
-      "scripts/switch_theme.js"
+      "scripts/switch_theme.js",
+      "scripts/slider.js"
     ]
 
     subtitle = "Consultoria Especializada Ambiental"

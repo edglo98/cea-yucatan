@@ -1,6 +1,15 @@
 
 <footer>
-    <span>
-        &copy; <time datetime="{{ now }}">{{ now.Format "2006" }}</time>{{ .Site.Author.name }}. {{ i18n "generator" | safeHTML }} dsad
-    </span>
+    <section>
+        <small>
+            Derechos reservados &copy; 
+            <time datetime="{{ now }}">{{ now.Year }}</time> |
+            {{ .Site.Title   }} - {{ .Site.Params.Subtitle }}
+        </small>
+        <div>
+            <a href="https://www.facebook.com/ceayucatan" target="_blank">
+                <span class="icon link-icon facebook-icon"></span>
+            </a>
+        </div>
+    </section>
 </footer>
