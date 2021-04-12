@@ -1,4 +1,4 @@
-if( localStorage.getItem("dark-mode") === "true" || window.matchMedia('(prefers-color-schema: dark') ) {
+if( localStorage.getItem("dark-mode") === "true" || (window.matchMedia('(prefers-color-scheme: dark)') && localStorage.getItem("dark-mode") === undefined) ) {
     document.body.classList.add("dark")
     document.getElementById("darkmode_icon").classList.add("switchtheme-circle__active")
 }else {
