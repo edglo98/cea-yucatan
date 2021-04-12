@@ -1,6 +1,6 @@
 <head>
     {{ range .Site.Params.styles -}}
-        <Link rel="stylesheet" href="{{ . | relURL }}">
+        <Link rel="stylesheet" type="text/css" href="{{ . | relURL }}">
     {{ end -}}
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ "images/favicon-32x32.png" | relURL }}">

@@ -25,7 +25,7 @@
                     {{ range .Site.Menus.main }}
                             <li class="navbar-item navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}__active{{end}}">
                                 <a href="{{ .URL }}"  title="{{ .Title }}">
-                                    <!-- {{ .Pre }} -->
+                                    <!-- -->
                                     <span>{{ .Name }}</span>
                                 </a>
                             </li>
